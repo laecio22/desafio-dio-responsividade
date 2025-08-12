@@ -6,6 +6,7 @@
 
 html {
     font-size: 62.5%;
+    font-family: 'Open Sans', sans-serif;
 }
 
 body {
@@ -19,4 +20,13 @@ body {
 img {
   max-width: 100%;
   object-fit: cover;
+}
+
+header {
+    background-image: url(../images/imageHeader.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 40rem;
+    color: #fff;
 }
