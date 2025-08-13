@@ -1,12 +1,12 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 62.5%;
-    font-family: 'Open Sans', sans-serif;
+  font-size: 62.5%;
+  font-family: "Open Sans", sans-serif;
 }
 
 body {
@@ -23,10 +23,79 @@ img {
 }
 
 header {
-    background-image: url(../images/imageHeader.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    height: 40rem;
-    color: #fff;
+  background-image: url(../images/imageHeader.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 40rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 1.6rem 0;
+}
+
+header > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+header h1 {
+  text-transform: uppercase;
+  font-family: "Luckiest Guy";
+  font-weight: 400;
+  font-size: 5.2rem;
+  word-break: keep-all;
+  width: 30%;
+  text-align: center;
+}
+
+header p {
+  word-break: keep-all;
+  width: 50%;
+  text-align: center;
+  font-weight: 400;
+}
+
+.containerButtons {
+  display: flex;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.buttonWindows {
+   background: #fff;
+   color: #23272A;
+   font-weight: 400;
+   width: 20rem;
+   height: 4rem;
+   border-radius: 2.8rem;
+   border: none;
+   font-size: 1.6rem;
+   cursor: pointer;
+}
+
+
+.buttonOpenDiscord {
+   background: #23272A;
+   color: #fff;
+   font-weight: 400;
+   width: 28rem;
+   height: 4rem;
+   border-radius: 2.8rem;
+   border: none;
+   font-size: 1.6rem;
+   cursor: pointer;
+}
+
+@media screen  and (max-width:520px) {
+  .containerButtons {
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  .buttonWindows {
+    width: 28rem;
+  }
 }
