@@ -22,6 +22,10 @@ img {
   object-fit: cover;
 }
 
+.backgroundContent {
+  background-color: #F6F6F6;
+}
+
 header {
   background-image: url(../images/imageHeader.png);
   background-repeat: no-repeat;
@@ -65,31 +69,30 @@ header p {
 }
 
 .buttonWindows {
-   background: #fff;
-   color: #23272A;
-   font-weight: 400;
-   width: 20rem;
-   height: 4rem;
-   border-radius: 2.8rem;
-   border: none;
-   font-size: 1.6rem;
-   cursor: pointer;
+  background: #fff;
+  color: #23272a;
+  font-weight: 400;
+  width: 20rem;
+  height: 4rem;
+  border-radius: 2.8rem;
+  border: none;
+  font-size: 1.6rem;
+  cursor: pointer;
 }
-
 
 .buttonOpenDiscord {
-   background: #23272A;
-   color: #fff;
-   font-weight: 400;
-   width: 28rem;
-   height: 4rem;
-   border-radius: 2.8rem;
-   border: none;
-   font-size: 1.6rem;
-   cursor: pointer;
+  background: #23272a;
+  color: #fff;
+  font-weight: 400;
+  width: 28rem;
+  height: 4rem;
+  border-radius: 2.8rem;
+  border: none;
+  font-size: 1.6rem;
+  cursor: pointer;
 }
 
-@media screen  and (max-width:520px) {
+@media screen and (max-width: 520px) {
   .containerButtons {
     gap: 2rem;
     justify-content: center;
@@ -99,3 +102,36 @@ header p {
     width: 28rem;
   }
 }
+
+.containerSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  /* margin: 4rem auto; */
+  color: #23272a;
+  margin: 6rem; 
+  align-items: center;
+  justify-items: center;
+  
+}
+
+.containerSection h1 {
+  font-weight: 800;
+  font-size: 4rem;
+  width: 45%;
+  word-break: keep-all;
+}
+
+.containerSection p {
+  font-weight: 400;
+  width: 45%;
+  word-break: keep-all;
+}
+
+.contentSection {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;  
+}
+
+
